@@ -14,7 +14,7 @@ composer require sindor/laravel-error-send-telegram
 ```bash
 php artisan vendor:publish --tag=laravel-error
 ```
-**2. Telegram bot config (To access send message your users must have a chat with bot)**
+**3. Telegram bot config (To access send message your users must have a chat with bot)**
 
 ```bash
 .env ERROR_TELEGRAM_BOT_TOKEN="<your-token>"
