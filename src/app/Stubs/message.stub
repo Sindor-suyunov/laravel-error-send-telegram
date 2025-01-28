@@ -1,0 +1,26 @@
+# 🚨 **Application Error Notification** 🚨
+---
+*App Name*
+> `$APP_NAME$`
+
+*App Url*
+> `$APP_HOST$`
+
+*App Env*
+> `$APP_ENV$`
+
+*Auth User ID*
+> `$AUTH_USER_ID$`
+
+---
+*Message*
+> `$MESSAGE$`
+
+*File*
+> `$FILE$ (line: $LINE$)`
+
+*Timestamp*
+> `$DATE$`
+
+---
+by SindorLaravelErrorSendTelegram

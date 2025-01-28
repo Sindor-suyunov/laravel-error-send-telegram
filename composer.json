@@ -1,0 +1,29 @@
+{
+    "name": "sindor/laravel-error-send-telegram",
+    "description": "Laravel handle error and send telegram bot",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sindor Suyunov",
+            "email": "sindorsuyunov92@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sindor\\LaravelErrorSendTelegram\\": "src/",
+            "Sindor\\LaravelErrorSendTelegram\\App\\": "src/app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sindor\\LaravelErrorSendTelegram\\PackageServiceProvider"
+            ]
+        }
+    }
+}
