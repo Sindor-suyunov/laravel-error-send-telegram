@@ -20,6 +20,18 @@ php artisan vendor:publish --tag=laravel-error
 .env ERROR_TELEGRAM_BOT_TOKEN="<your-token>"
 .env ERROR_TELEGRAM_USERS_IDS=<id1>,<id2>
 ```
+**4. You can manually send caught exception: (optional)**
+
+```bash
+use Sindor\LaravelErrorSendTelegram\App\Service\Sender;
+
+
+try {
+    //
+} catch (\Throwable $e) {
+    Sender::handle($e);
+}
+```
 
 # Configuration
 
