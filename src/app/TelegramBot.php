@@ -44,7 +44,7 @@ class TelegramBot implements ErrorSenderContract
                 $response = \Http::get($this->getUrl(), [
                     'chat_id' => $user_id,
                     'text' => $this->text,
-                    'parse_mode' => 'markdown'
+                    'parse_mode' => config('laravel-error.parse_mode')
                 ]);
                 if ($response->ok()) {
                     logger()->info("LaravelErrorSendTelegram: Exception error successfully sent. (User id = {$user_id})");
