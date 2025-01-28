@@ -4,7 +4,7 @@ namespace Sindor\LaravelErrorSendTelegram\App\Exceptions;
 
 use Sindor\LaravelErrorSendTelegram\App\Service\Sender;
 
-class Handler extends \App\Exceptions\Handler
+class Handler extends \Illuminate\Foundation\Exceptions\Handler
 {
     public function report(\Throwable $e): void
     {
