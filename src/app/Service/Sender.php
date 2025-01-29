@@ -18,6 +18,10 @@ class Sender
 
     public static function handle(\Throwable $e): void
     {
+        if (!config('laravel-error.enabled')) {
+            return;
+        }
+
         $self = new self();
         $self->setThrowable($e);
 

@@ -19,6 +19,7 @@ php artisan vendor:publish --tag=laravel-error
 ```bash
 .env ERROR_TELEGRAM_BOT_TOKEN="<your-token>"
 .env ERROR_TELEGRAM_USERS_IDS=<id1>,<id2>
+.env ERROR_TELEGRAM_ENABLED=true
 ```
 **4. You can manually send caught exception: (optional)**
 
